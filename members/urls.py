@@ -14,5 +14,5 @@ from members.views import members
 
 
 urlpatterns = [
-    path('m/', members),
+    path('members/', members),
 ]
