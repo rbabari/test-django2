@@ -10,20 +10,9 @@ urlpatterns = [
 
 # example/urls.py
 from django.urls import path
-from members.views import index
+from members.views import members,index,membersFromtemplate
 
 
 urlpatterns = [
-    path('', index),
+    path('', membersFromtemplate),
 ]
-"""
-# example/urls.py
-from django.urls import path
-
-from example.views import index
-
-
-urlpatterns = [
-    path('', index),
-]
-"""
