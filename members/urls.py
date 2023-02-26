@@ -14,5 +14,5 @@ from members.views import members,index,membersFromtemplate
 
 
 urlpatterns = [
-    path('', membersFromtemplate),
+    path('', members),
 ]
