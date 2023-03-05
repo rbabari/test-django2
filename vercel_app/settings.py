@@ -77,36 +77,54 @@ WSGI_APPLICATION = 'vercel_app.wsgi.application'
 # Note: Django modules for using databases are not support in serverless
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
 
-
+"""
 DATABASES = {
  'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'mydatabase.sqlite3',
  }
 }
-"""
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
-        'PASSWORD': 'mypassword',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employee',
+        'USER': 'app',
+        'PASSWORD': 'Motdepass1983',
+        'HOST': 'serveurapp.database.windows.net',
+        'PORT': '3306',
     }
 }
+"""
+
+"""
+# fonctionne bien en local
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employee',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+"""
+
+
+# il faut : pip install djongo
+
 
 DATABASES = {
         'default': {
             'ENGINE': 'djongo',
-            'NAME': 'django-db-name',
+            'NAME': 'blog',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://rbabari:motdepass@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&w=majority'
+                'host': 'mongodb+srv://rbabari:motdepass@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&ssl_cert_reqs=CERT_NONE'
             }  
         }
 }
-"""
 
 
 
