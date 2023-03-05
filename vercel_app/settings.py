@@ -121,12 +121,12 @@ DATABASES = {
             'NAME': 'blog',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://rbabari:motdepass@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&ssl_cert_reqs=CERT_NONE'
+                'host': 'mongodb+srv://rbabari:motdepass@cluster0.yu4qskq.mongodb.net/test?retryWrites=true'
             }  
         }
 }
 
-
+#&ssl_cert_reqs=CERT_NONE
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
