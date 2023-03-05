@@ -121,7 +121,7 @@ DATABASES = {
             'NAME': 'blog',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://vercel-admin-user:vercelpassword@cluster0.yu4qskq.mongodb.net/test?retryWrites=true'
+                'host': 'mongodb+srv://vercel-admin-user:vercelpassword@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&ssl_cert_reqs=CERT_NONE'
             }  
         }
 }
