@@ -121,10 +121,12 @@ DATABASES = {
             'NAME': 'blog',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-                'host': 'mongodb+srv://vercel-admin-user:vercelpassword@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&ssl_cert_reqs=CERT_NONE'
+                'host': 'mongodb+srv://vercel-admin-user:vercelpassword@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&w=majority&ssl_cert_reqs=CERT_NONE'
             }  
         }
 }
+
+# mongodb+srv://vercel-admin-user:tbHNWMoy4PvCbGb6@cluster0.yu4qskq.mongodb.net/test?retryWrites=true&w=majority#
 
 #vercel-admin-user
 #vercelpassword
